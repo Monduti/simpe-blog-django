@@ -1,0 +1,9 @@
+# В консолі PostgreSQL:
+CREATE DATABASE test_pgsql; -- Створення бази даних
+CREATE USER alex WITH PASSWORD 'root'; -- Створення користувача
+ALTER ROLE alex SET client_encoding TO 'utf8';  -- Налаштування
+GRANT ALL PRIVILEGES ON DATABASE test_pgsql TO alex;  -- Надання прав
+\q   -- Вихід з консолі psql
+
+
+django-admin startproject test_django

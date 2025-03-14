@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список елементів</title>
+</head>
+<body>
+    <h1>Список елементів</h1>
+    <ul>
+        {% for item in items %}
+            <li>{{ item.name }} - {{ item.description }}</li>
+        {% empty %}
+            <li>Елементів поки немає.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
